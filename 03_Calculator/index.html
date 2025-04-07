@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            border:2px solid black;
+            height:300px;
+            width:300px;
+        }
+        #screen{
+            background-color:rgb(24, 23, 23);
+            height:50px;
+            color:white;
+            font-size:25px;
+        }
+        
+        button{
+            height:40px;
+            width:60px;
+        }
+        
+        #btns{
+            display:flex;
+            flex-wrap: wrap;
+            gap:15px;
+            padding-left:px;
+        }
+        #ac,
+        #zero,
+        #ans,
+        #div{
+            margin-top:17px;
+        }
+
+
+        #answer{
+            float: right;
+            font-size: 20px;
+            padding-top:22px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="screen">
+            0
+            <span id="answer">fjdfjd</span>
+        </div>
+        <div id="btns">
+            <button id="ac">AC</button>
+            <button id="zero">0</button>
+            <button id="ans">=</button>
+            <button id="div">/</button>
+    
+            <button id="seven">7</button>
+            <button id="eight">8</button>
+            <button id="nine">9</button>
+            <button id="mul">X</button>
+            <br>
+            <button id="four">4</button>
+            <button id="five">5</button>
+            <button id="six">6</button>
+            <button id="sub">-</button>
+            <br>
+            <button id="one">1</button>
+            <button id="two">2</button>
+            <button id="three">3</button>
+            <button id="add">+</button>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    let buttons = document.querySelectorAll("button");
+    let a="";
+    let b=document.getElementById("screen");
+
+buttons.forEach(function(button){
+    button.addEventListener("click", function(){
+        // your logic here
+        a+=button.innerHTML
+        b.innerHTML=a
+    });
+});
+
+</script>
+</html>
