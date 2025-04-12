@@ -4,62 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #main{
-            border:2px solid black;
-            height:300px;
-            width:300px;
-        }
-        #screen{
-            background-color:rgb(24, 23, 23);
-            height:50px;
-            color:white;
-            font-size:25px;
-        }
-        
-        button{
-            height:40px;
-            width:60px;
-        }
-        
-        #btns{
-            display:flex;
-            flex-wrap: wrap;
-            gap:15px;
-            padding-left:px;
-        }
-        #ac,
-        #zero,
-        #ans,
-        #div{
-            margin-top:17px;
-        }
-
-
-        #answer{
-            float: right;
-            font-size: 20px;
-            padding-top:22px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Calculator by Vaibhav</h1>
     <div id="main">
         <div id="screen">
-            0
-            <span id="answer">fjdfjd</span>
+           <div id="ex">0</div>
+           <div id="answer">0</div>
         </div>
         <div id="btns">
             <button id="ac">AC</button>
-            <button id="zero">0</button>
-            <button id="ans">=</button>
-            <button id="div">/</button>
-    
+            <button id="del">DEL</button>
+            <button id="ob">(</button>
+            <button id="cb">)</button>
+            <br>
             <button id="seven">7</button>
             <button id="eight">8</button>
             <button id="nine">9</button>
-            <button id="mul">X</button>
+            <button id="mul">x</button>
             <br>
             <button id="four">4</button>
             <button id="five">5</button>
@@ -70,23 +33,12 @@
             <button id="two">2</button>
             <button id="three">3</button>
             <button id="add">+</button>
-
+            <br>
+            <button id="zero">0</button>
+            <button id="ans">=</button>
+            <button id="div">/</button>   
         </div>
     </div>
 </body>
-
-<script>
-    let buttons = document.querySelectorAll("button");
-    let a="";
-    let b=document.getElementById("screen");
-
-buttons.forEach(function(button){
-    button.addEventListener("click", function(){
-        // your logic here
-        a+=button.innerHTML
-        b.innerHTML=a
-    });
-});
-
-</script>
+<script src="index.js"></script>
 </html>
