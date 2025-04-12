@@ -59,7 +59,7 @@ button:active{
 }
 
 #answer{
-    margin-left:270px;
+    margin-left:5px;
 }
 h1{
 font-size:60px;
@@ -146,7 +146,7 @@ button:active{
 }
 
 #answer{
-    margin-left:180px;
+    margin-left:5px;
     color:rgb(118, 0, 154);
     font-size:18px;
 }
