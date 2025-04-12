@@ -103,7 +103,7 @@ margin-left:10px;
     background-color:rgb(199, 196, 196);
     height:30px;
     color:rgb(6, 6, 6);
-    font-size:25px;
+    font-size:17px;
     padding-bottom: 25px;
     border-radius:20px;
     margin-top:5px;
@@ -148,7 +148,7 @@ button:active{
 #answer{
     margin-left:180px;
     color:rgb(118, 0, 154);
-    font-size:10px;
+    font-size:13px;
 }
 
 #ans{
