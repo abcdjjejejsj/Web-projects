@@ -28,6 +28,6 @@ Check it out here: [https://web-projects-hytt.vercel.app](https://web-projects-h
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript
 
 
