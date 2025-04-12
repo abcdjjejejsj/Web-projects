@@ -1,0 +1,163 @@
+body{
+    background:linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0));
+    height:cover;
+    
+}
+#main{
+    border:2px solid rgb(255, 255, 255);
+    height:500px;
+    width:400px;
+    margin-left:34%;
+    padding-left:55px;
+    padding-right:0px;
+    box-shadow: 0px 0px 20px rgb(208, 195, 195),0px 0px 40px white;
+}
+#screen{
+    background-color:rgb(199, 196, 196);
+    height:50px;
+    color:rgb(6, 6, 6);
+    font-size:28px;
+    padding-bottom: 10px;
+    border-radius:20px;
+    margin-top:5px;
+    width:340px;
+    font-weight:800;
+
+}
+
+button{
+    height:50px;
+    width:60px;
+    background-color:white;
+    border:none;
+    box-shadow:2px 2px 10px gray,3px 3px 4px rgb(2, 255, 95);
+    font-size:25px;
+    font-weight:600;
+    
+}
+button:hover{
+    background-color:rgb(15, 157, 129);
+    color:white;
+    cursor:pointer;
+}
+button:active{
+    transform:translateY(2px);
+    box-shadow:2px 2px 10px rgb(255, 255, 255),3px 3px 4px rgb(255, 255, 255);
+}
+
+#btns{
+    display:flex;
+    flex-wrap: wrap;
+    gap:32px;
+    
+}
+#ac,
+#del,
+#ob,
+#cb{
+    margin-top:17px;
+}
+
+#answer{
+    margin-left:270px;
+}
+h1{
+font-size:60px;
+text-align: center;
+color:rgb(250, 230, 230);
+text-shadow:2px 2px 10px red,3px 3px 20px blue,2px 2px 30px red,3px 3px 40px blue;
+}
+
+#ans{
+width:155px;
+}
+
+#ex{
+margin-top:20px;
+margin-left:10px;
+}
+
+    @media (max-width:786px) {
+
+    #main{
+        margin-left:13%;
+    }
+}
+
+/*for mobile */
+@media (max-width:480px) {
+   h1{
+    font-size:20px;
+    margin-top:20px;
+   }
+   #main{
+    border:2px solid rgb(255, 255, 255);
+    height:330px;
+    width:230px;
+    margin-left:2%;
+    margin-top:20px;
+    padding-left:20px;
+    padding-right:4px;
+    box-shadow: 0px 0px 20px rgb(208, 195, 195),0px 0px 40px white;
+}
+#screen{
+    background-color:rgb(199, 196, 196);
+    height:30px;
+    color:rgb(6, 6, 6);
+    font-size:25px;
+    padding-bottom: 25px;
+    border-radius:20px;
+    margin-top:5px;
+    width:220px;
+    font-weight:500;
+}
+
+button{
+    height:40px;
+    width:50px;
+    background-color:white;
+    border:none;
+    box-shadow:2px 2px 5px gray,3px 3px 5px rgb(2, 255, 95);
+    font-size:15px;
+    font-weight:600;
+    border-radius:5px;
+    
+}
+button:hover{
+    background-color:rgb(15, 157, 129);
+    color:white;
+    cursor:pointer;
+}
+button:active{
+    transform:translateY(2px);
+    box-shadow:2px 2px 10px rgb(255, 255, 255),3px 3px 4px rgb(255, 255, 255);
+}
+
+#btns{
+    display:flex;
+    flex-wrap: wrap;
+    gap:6px;
+    
+}
+#ac,
+#del,
+#ob,
+#cb{
+    margin-top:17px;
+}
+
+#answer{
+    margin-left:180px;
+    color:rgb(118, 0, 154);
+}
+
+#ans{
+width:107px;
+}
+
+#ex{
+margin-top:20px;
+margin-left:10px;
+}
+}
+
