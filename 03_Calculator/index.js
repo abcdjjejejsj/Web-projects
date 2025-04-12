@@ -32,7 +32,7 @@ buttons.forEach(function(button){
         a=""; 
         as="";
         b.innerHTML="0";  
-        e.innerHTML="0";
+        e.innerHTML="Answer";
            
     }    
     });
@@ -40,7 +40,7 @@ buttons.forEach(function(button){
 
 document.getElementById("ans").addEventListener("click",function(){
    try{
-    res=eval(a);
+    res="="+eval(a);
    }catch{
     res="Error";
    }
