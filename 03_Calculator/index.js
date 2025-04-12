@@ -47,3 +47,38 @@ document.getElementById("ans").addEventListener("click",function(){
 e.innerHTML=res;
     
 })
+
+document.addEventListener("keydown", function(event) {
+    let f = event.key;
+
+    
+    if (f === "*") {
+        a += "*";   
+        as += "x";   
+        b.innerHTML = as;
+    }
+
+
+    else if (f !== "Enter" && f !== "Backspace") {
+        a += f;
+        as += f;
+        b.innerHTML = as;
+    }
+
+  
+    else if (f === "Enter") {
+        try {
+            res = "=" + eval(a);
+        } catch {
+            res = "Error";
+        }
+        e.innerHTML = res;
+    }
+
+ 
+    else if (f === "Backspace") {
+        a = a.slice(0, -1);
+        as = as.slice(0, -1);
+        b.innerHTML = as;
+    }
+});
