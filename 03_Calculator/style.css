@@ -59,7 +59,8 @@ button:active{
 }
 
 #answer{
-    margin-left:5px;
+    margin-left:10px;
+    color:purple
 }
 h1{
 font-size:60px;
@@ -77,6 +78,7 @@ margin-top:20px;
 margin-left:10px;
 }
 
+/*for tablet*/
     @media (max-width:786px) {
 
     #main{
@@ -160,4 +162,3 @@ margin-top:20px;
 margin-left:10px;
 }
 }
-
