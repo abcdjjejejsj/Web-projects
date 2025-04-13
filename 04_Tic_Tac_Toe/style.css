@@ -21,6 +21,7 @@ h1 {
     gap: 20px;
     margin: 20px auto;
     max-width: 90vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #t1, #t2 {
