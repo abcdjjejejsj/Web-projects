@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IoT Temp Tracker</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for graph -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🌡️ Real-Time Water Temp Monitor</h1>
+
+  <div class="container">
+    <div class="temp" id="tempDisplay">-- °C</div>
+    <div class="status" id="statusDisplay">Connecting...</div>
+  </div>
+
+  <div id="chart-container">
+    <canvas id="tempChart"></canvas>
+  </div>
+
+  <button id="downloadBtn" onclick="downloadCSV()">⬇️ Download Data</button>
+
+  <audio id="alertTone" src="alert_1.mp3" preload="auto"></audio>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
