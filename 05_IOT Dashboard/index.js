@@ -15,6 +15,9 @@ window.addEventListener('scroll', () => {
   userInteracted = true;
 });
 
+// Get the alert audio element once
+const alertTone = document.getElementById('alertTone');
+
 // For chart and CSV download
 let temperatureData = [];
 let timeLabels = [];
@@ -69,7 +72,7 @@ async function updateTemperature() {
       status.textContent = "🔥 Danger: High Temp!";
       status.classList.add('warning');
       if (!alertActive && userInteracted) {
-        document.getElementById('alertTone').play().catch(error => {
+        alertTone.play().catch(error => {
           console.error("Audio play error:", error);
         });
         alertActive = true;
@@ -77,7 +80,12 @@ async function updateTemperature() {
     } else {
       status.textContent = "✅ Safe";
       status.classList.remove('warning');
-      alertActive = false;
+      if (alertActive) {
+        // Stop sound immediately if previously playing
+        alertTone.pause();
+        alertTone.currentTime = 0; // Reset to start
+        alertActive = false;
+      }
     }
 
     // Update chart
