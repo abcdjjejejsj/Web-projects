@@ -105,3 +105,19 @@ const channelID = "2922478";
       link.click();
       document.body.removeChild(link);
     }
+let userInteracted = false;
+
+window.addEventListener('click', () => {
+  userInteracted = true;
+});
+
+// Update inside your updateTemperature function:
+if (temp > warningThreshold) {
+  status.textContent = "🔥 Danger: High Temp!";
+  status.classList.add('warning');
+  if (!alertActive && userInteracted) {
+    document.getElementById('alertTone').play();
+    alertActive = true;
+  }
+}
+
