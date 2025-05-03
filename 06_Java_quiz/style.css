@@ -1,0 +1,214 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 40px; /* Add some top padding to accommodate the fixed timer */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.quiz-container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 30px; /* Add some space below the quiz container */
+}
+
+.quiz-container:hover {
+    transform: scale(1.01);
+}
+
+#title {
+    color: #2c3e50;
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    font-size: 1.15em;
+    color: #34495e;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    position: relative; /* For positioning feedback text */
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.options li {
+    margin-bottom: 12px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #e8f0fe;
+    border-radius: 6px;
+    border: 1px solid #d1e9ff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.options label:hover {
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.options label.active {
+    background-color: #a8cfff; /* Darker on click */
+    border-color: #94b5e0;
+}
+
+.options label.correct {
+    background-color: #d4edda; /* Light green for correct */
+    border-color: #c3e6cb;
+}
+
+.options label.wrong {
+    background-color: #f8d7da; /* Light red for wrong */
+    border-color: #f5c2c7;
+}
+
+.options label.disabled {
+    cursor: default;
+    pointer-events: none; /* Prevent further clicks */
+}
+
+.submit-btn {
+    background-color: #3867d6;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease-in-out;
+    align-self: center;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.submit-btn:hover {
+    background-color: #2a4ba0;
+}
+
+#results {
+    margin-top: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    padding: 15px;
+    background-color: #f0f8ea;
+    border-radius: 6px;
+    border: 1px solid #d3e4cd;
+}
+
+#results button {
+    background-color: #27ae60;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#results button:hover {
+    background-color: #1e8449;
+}
+
+.question img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.correct-text {
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.wrong-text {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#timer {
+    position: fixed;
+    top: 10px; /* Adjust to move it down */
+    left: 10px; /* Move it to the left */
+    font-size: 1.2em;
+    color: #555;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.next-btn {
+    background-color: #f39c12; /* Orange-ish */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: background-color 0.2s ease-in-out;
+    align-self: center;
+}
+
+.next-btn:hover {
+    background-color: #d3890e;
+}
+
+#reload{
+    background-color: #27ae60;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: background-color 0.2s ease-in-out;  
+}
