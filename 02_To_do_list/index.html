@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list By Vaibhav</title>
+    <title>Dynamic to_do list by vaibhav</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <h1>To-Do List</h1>
+    <div class="main">
+        <input type="text" name="task" id="task" placeholder="Enter task here....">
+        <input type="date" name="date" id="date">
+        <select name="prio" id="prio">
+            <option value="Priority">Priority</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        <button id="add" onclick="add()">Add</button>
 
-<h2>Dynamic To do List</h2>
+    </div>
+    <!-- <div class="taskEdit">
+        <label for="editText" class="editText">Edit Task</label>
+        <input type="text" name="edited" id="edited">
+        <div class="btnsec">
+            <button class="cancel">Cancel</button>
+            <button class="ok">OK</button>
+        </div> -->
 
-<div class="input-container">
-    <input type="text" id="todoInput" placeholder="Enter Todo">
-    <button id="addBtn" onclick="add()">Add</button>
-</div>
+    </div>
+    <h3>Task List</h3>
+    <div id="list_task">
+        <!-- <h2 id="warning">Task list is empty !</h2> -->
 
-<ul id="todoList">
-    <!-- JS se tasks add honge with Delete Btn -->
-</ul>
+        <!-- <div class="task">
+            <input type="checkbox" name="com" id="status">
+            <div class="taskName">hdhdhdhhdhd</div>
+            <div class="dte">23/12/2024</div>
+            <button class="edit">Edit</button>
+            <button class="del">Delete</button>
+        </div> -->
+
+    </div>
+    <!-- <div class="taskEdit">
+        <label for="editText" class="editText">Edit Task</label>
+        <input type="text" name="edited" class="edited">
+        <input type="date" name="" class="editDate">
+        <select name="" class="editPrio">
+            <option value="null">Priority</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        <div class="btnsec">
+            <button class="cancel">Cancel</button>
+            <button class="ok">OK</button>
+        </div> -->
+
 
 <script src="index.js"></script>
-
 </body>
 </html>
